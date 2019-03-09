@@ -5,8 +5,7 @@ ScreenHD
 # cloneable config which has all affected folders available 
 # Mount Network Drive
 # install curlftl to mount network drive
-sudo apt-get update && sudo apt-get upgrade
-sudo apt-get install curlftpfs
+sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install curlftpfs -y
 ## Add Network Drive
 mkdir /home/pi/media/ /home/pi/media/netdrive/ /home/pi/media/nasdrive
 Make changes to fstab
@@ -17,6 +16,8 @@ curlftpfs#"user":"password"@"hostip".local:21/ /home/pi/media/nasdrive ,fuse aut
 # Back up raspberry pi
 sudo apt-get install deja-dup
 
+# install virtualenv
+pip install virtualenv
 # Summary of Sound and Video Programmes
 # Audacity
 # Kodi
