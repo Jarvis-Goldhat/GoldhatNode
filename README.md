@@ -20,10 +20,11 @@ sudo apt-get install deja-dup
 pip install virtualenv
 # Summary of Sound and Video Programmes
 # Audacity
-# Kodi
+# Kodi, youtube
 # Mopidy
 # VLC
-
+# retropie , with snes + street fighter, mario cart + red alert, quake, doom, wolfenstein
+#### 
 
 
 # Kodi with Network access, youtube 
@@ -35,8 +36,6 @@ pip install virtualenv
 Goldhat Node 
 Screen 1
 # this node will have vlc, google aiy, lamp, 
-
-
 
 Stack 1 x 4
 1 Pan and tilt and voice capture
