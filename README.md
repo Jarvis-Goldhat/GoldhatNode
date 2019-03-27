@@ -1,32 +1,43 @@
-# GoldhatNode
-ScreenHD
-# Goldhat Node 1 - Screen HD Controller  
-# This node which will have a hdmi will have Kodi and Retropie installed   
-# cloneable config which has all affected folders available 
+# Screen Raspberry Pi - Goldhat Node 1 - 3.5 inch Screen Controller  
+# Node which will have a hdmi cable into TV and separate screen  
+## OS: Raspbian, Kodi media and Lakka Retrogaming installed on noobs  
 # Mount Network Drive
-# install curlftl to mount network drive
+# Update &  to mount network drive (install curlftl)
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install curlftpfs -y
-## Add Network Drive
 mkdir /home/pi/media/ /home/pi/media/netdrive/ /home/pi/media/nasdrive
-Make changes to fstab
+# add changes to fstab for autoboot
 sudo nano /etc/fstab
 curlftpfs#user":"password"@"hostip".local:21/ /home/pi/media/netdrive ,fuse auto,user,uid=52,allow_other,_netdev 0 0
 curlftpfs#"user":"password"@"hostip".local:21/ /home/pi/media/nasdrive ,fuse auto,user,uid=52,allow_other,_netdev 0 0
 
 # Back up raspberry pi
 sudo apt-get install deja-dup
+/home/pi/media/nasdrive/Backup/Pis/ScreenPi/
 
 # install virtualenv
 pip install virtualenv
+source 
+# folder structure
+mkdir voice vision scrapy websites screens octapi printing games retropie lakka
+ # nodes projects
+  # sound
+   # voice
+   # Audacity
+   # Mopidy
+   # VLC
+  # vision
+  # scrapy
+  # websites
+  # screens 
+  # octapi
+  # printing
+  # games
+   # retropie
+   # lakka
+   # Kodi, youtube
+   # retropie , with snes + street fighter, mario cart + red alert, quake, doom, wolfenstein
+
 # Summary of Sound and Video Programmes
-# Audacity
-# Kodi, youtube
-# Mopidy
-# VLC
-# retropie , with snes + street fighter, mario cart + red alert, quake, doom, wolfenstein
-#### 
-
-
 # Kodi with Network access, youtube 
 
 # Retropie with snes mario cart 
@@ -51,3 +62,4 @@ Stack 1 x 4
 Using motioneye
 
 Film studio
+# cloneable config which has all affected folders available 
