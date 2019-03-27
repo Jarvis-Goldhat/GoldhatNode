@@ -15,8 +15,13 @@ sudo apt-get install deja-dup
 /home/pi/media/nasdrive/Backup/Pis/ScreenPi/
 
 # install virtualenv
-pip install virtualenv
-source 
+pip install virtualenv virtualenvwrapper
+# Before you continue, add some lines to the ~/.bashrc  profile. Open the file using nano , vim , or emacs  and append these lines to the end:
+sudo nano ~/.bashrc 
+# virtualenv and virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source /usr/local/bin/virtualenvwrapper.sh
 # folder structure
 mkdir voice vision scrapy websites screens octapi printing games retropie lakka
  # nodes projects
